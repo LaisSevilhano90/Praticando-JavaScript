@@ -69,10 +69,44 @@
 // })
 
 //EVENTO DE FORMULÁRIO (submit)
-const form = document.querySelector("form")//pegando direto pela tag form 
-//o comportamento padrão do formulário é recarregar a página ao enviar o submit
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    const nome = document.getElementById("nome").value
-    console.log(`Nome: ${nome}`)
-})
+// const form = document.querySelector("form")//pegando direto pela tag form 
+// //o comportamento padrão do formulário é recarregar a página ao enviar o submit
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault()
+//     const nome = document.getElementById("nome").value
+//     console.log(`Nome: ${nome}`)
+// })
+
+//criando elementos na pagina
+// const novoElemento = document.createElement("p"); //cria o elemento <p>
+// novoElemento.innerText = "Elemento novo criado."; //criando um texto no elemento
+// const form = document.getElementById("form");//avisar que ta dentro do form
+// //estamos adicionando um elemento filho (p) dentro do pai (form)
+// form.appendChild(novoElemento);
+
+// //criar um bottao
+// const botao = document.createElement("button")
+// botao.innerText = "Excluir elemento"
+
+// form.appendChild(botao)
+// botao.addEventListener("click", (e) =>{
+//     e.preventDefault()
+//     novoElemento.remove();
+//     //apagando direto do pai
+//     form.removeChild(novoElemento)//botando a criança para a adoção direto
+// })
+
+//adicionando elementos em uma list, a parrtir de um input
+// const input = document.getElementById("input")
+// const botao = document.getElementById("add")
+// const lista = document.getElementById("lista")
+
+// botao.addEventListener("click", () =>{
+//     const valorDigitado = input.value // pega o valor que foi digitado na caixinha/input
+//     const li = document.createElement("li") //criando <li>
+//     li.innerText = valorDigitado;
+
+//     //colocando o filho (li) dentro do pai (ul)
+//     lista.appendChild(li)
+//     input.value = ""
+// })
